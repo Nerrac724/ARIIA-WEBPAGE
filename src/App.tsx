@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { ARIIAPortal } from './components/ARIIAPortal';
+import { ARIIAPortal } from './components/ARIIAPortal.tsx';
 
 function App() {
   return (
