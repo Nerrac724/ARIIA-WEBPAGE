@@ -63,7 +63,7 @@ export const Navbar: React.FC = () => {
                     ? 'text-gray-600 dark:text-gray-400' 
                     : 'text-gray-300 dark:text-gray-400'
                 }`}>
-                  NBA Accredited Engineering Programs
+                  ARIIA Innovation Excellence
                 </div>
               </div>
             </div>

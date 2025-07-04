@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, ExternalLink } from 'lucide-react';
+import { Download, TrendingUp, Award, Lightbulb } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -10,44 +10,71 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
       </div>
 
+      {/* Floating Innovation Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-16 h-16 bg-accent-gold/20 rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-12 h-12 bg-accent-teal/20 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-40 left-20 w-20 h-20 bg-accent-purple/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-10 w-14 h-14 bg-primary-400/20 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+      </div>
+
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
+          {/* ARIIA Badge */}
+          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent-gold/20 to-accent-teal/20 backdrop-blur-md border border-white/20 rounded-full mb-8">
+            <Award className="w-6 h-6 text-accent-gold mr-3" />
+            <span className="text-white font-semibold text-lg">ARIIA Ranked Institution</span>
+          </div>
+
           <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            Sardar Patel Institute of Technology
+            Innovation Excellence
           </h1>
-          <p className="font-poppins text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-            NBA Accreditations and Autonomy Certificates - Excellence in Engineering & Technical Education
+          <h2 className="font-playfair text-2xl md:text-4xl lg:text-5xl font-bold text-accent-gold mb-6">
+            ARIIA Rankings Portal
+          </h2>
+          <p className="font-poppins text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto">
+            Atal Ranking of Institutions on Innovation Achievements - Showcasing SPIT's commitment to fostering innovation, entrepreneurship, and startup ecosystem
           </p>
           
-          {/* Latest NBA Report Button */}
-          <div className="flex justify-center mb-12">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
             <a
-              href="/assets/NBA_25.pdf"
+              href="/assets/ARIIA_Report_2024.pdf"
               className="inline-flex items-center px-8 py-4 bg-accent-gold hover:bg-accent-gold/90 text-dark-900 font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <Download className="w-6 h-6 mr-3" />
-              Latest NBA Report
+              Latest ARIIA Report 2024
+            </a>
+            <a
+              href="#ariia-portal"
+              className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark-900 font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105"
+            >
+              <Lightbulb className="w-6 h-6 mr-3" />
+              Explore Innovation Data
             </a>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             <div className="text-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-accent-gold mb-2">5</div>
-              <div className="text-gray-300 font-medium">NBA Accreditations</div>
+              <div className="text-3xl md:text-4xl font-bold text-accent-gold mb-2 flex items-center justify-center">
+                <TrendingUp className="w-8 h-8 mr-2" />
+                Band A
+              </div>
+              <div className="text-gray-300 font-medium">ARIIA Ranking</div>
             </div>
             <div className="text-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-accent-teal mb-2">2</div>
-              <div className="text-gray-300 font-medium">Autonomy Certificates</div>
+              <div className="text-3xl md:text-4xl font-bold text-accent-teal mb-2">150+</div>
+              <div className="text-gray-300 font-medium">Innovation Projects</div>
             </div>
             <div className="text-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-accent-gold mb-2">100%</div>
-              <div className="text-gray-300 font-medium">Industry Ready</div>
+              <div className="text-3xl md:text-4xl font-bold text-accent-gold mb-2">50+</div>
+              <div className="text-gray-300 font-medium">Startups Incubated</div>
             </div>
             <div className="text-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-accent-teal mb-2">Tier-1</div>
-              <div className="text-gray-300 font-medium">NBA Rating</div>
+              <div className="text-3xl md:text-4xl font-bold text-accent-teal mb-2">₹2Cr+</div>
+              <div className="text-gray-300 font-medium">Innovation Funding</div>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { ProgramsPortal } from './components/ProgramsPortal';
+import { ARIIAPortal } from './components/ARIIAPortal';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <main id="main-content">
         <Hero />
-        <ProgramsPortal />
+        <ARIIAPortal />
       </main>
     </div>
   );
