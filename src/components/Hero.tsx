@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp } from 'lucide-react';
+import { Download, TrendingUp, Award, Lightbulb } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -21,15 +21,39 @@ export const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
+          {/* ARIIA Badge */}
+          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent-gold/20 to-accent-teal/20 backdrop-blur-md border border-white/20 rounded-full mb-8">
+            <Award className="w-6 h-6 text-accent-gold mr-3" />
+            <span className="text-white font-semibold text-lg">ARIIA Ranked Institution</span>
+          </div>
+
           <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
             Innovation Excellence
           </h1>
           <h2 className="font-playfair text-2xl md:text-4xl lg:text-5xl font-bold text-accent-gold mb-6">
             ARIIA Rankings Portal
           </h2>
-          <p className="font-poppins text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto">
+          <p className="font-poppins text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto">
             Atal Ranking of Institutions on Innovation Achievements - Showcasing SPIT's commitment to fostering innovation, entrepreneurship, and startup ecosystem
           </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+            <a
+              href="/assets/ARIIA_Report_2024.pdf"
+              className="inline-flex items-center px-8 py-4 bg-accent-gold hover:bg-accent-gold/90 text-dark-900 font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <Download className="w-6 h-6 mr-3" />
+              Latest ARIIA Report 2024
+            </a>
+            <a
+              href="#ariia-portal"
+              className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark-900 font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105"
+            >
+              <Lightbulb className="w-6 h-6 mr-3" />
+              Explore Innovation Data
+            </a>
+          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">

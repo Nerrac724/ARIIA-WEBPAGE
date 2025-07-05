@@ -17,46 +17,46 @@ const yearlyData: YearData[] = [
   {
     year: '2023',
     reports: [
-      { name: 'ARIIA Report 2023.pdf', url: '/assets/ARIIA_Report_2023.pdf' }
+      { name: 'ARIIA Report 2023.pdf', url: '/assets/ARIIA_23_Report.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2023.pdf', url: '/assets/ARIIA_Certificate_2023.pdf' }
+      { name: 'ARIIA Certificate 2023.pdf', url: '/assets/ARIIA_23_Cert.pdf' }
     ]
   },
   {
     year: '2022',
     reports: [
-      { name: 'ARIIA Report 2022.pdf', url: '/assets/ARIIA_Report_2022.pdf' }
+      { name: 'ARIIA Report 2022.pdf', url: '/assets/ARIIA_22_Report.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2022.pdf', url: '/assets/ARIIA_Certificate_2022.pdf' }
+      { name: 'ARIIA Certificate 2022.pdf', url: '/assets/ARIIA_22_Cert.pdf' }
     ]
   },
   {
     year: '2021',
     reports: [
-      { name: 'ARIIA Report 2021.pdf', url: '/assets/ARIIA_Report_2021.pdf' }
+      { name: 'ARIIA Report 2021.pdf', url: '/assets/ARIIA_21_Report.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2021.pdf', url: '/assets/ARIIA_Certificate_2021.pdf' }
+      { name: 'ARIIA Certificate 2021.pdf', url: '/assets/ARIIA_21_Cert.pdf' }
     ]
   },
   {
     year: '2020',
     reports: [
-      { name: 'ARIIA Report 2020.pdf', url: '/assets/ARIIA_Report_2020.pdf' }
+      { name: 'ARIIA Report 2020.pdf', url: '/assets/ARIIA_20_Report.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2020.pdf', url: '/assets/ARIIA_Certificate_2020.pdf' }
+      { name: 'ARIIA Certificate 2020.pdf', url: '/assets/ARIIA_20_Cert.pdf' }
     ]
   },
   {
     year: '2019',
     reports: [
-      { name: 'ARIIA Report 2019.pdf', url: '/assets/ARIIA_Report_2019.pdf' }
+      { name: 'ARIIA Report 2019.pdf', url: '/assets/ARIIA_19_Report.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2019.pdf', url: '/assets/ARIIA_Certificate_2019.pdf' }
+      { name: 'ARIIA Certificate 2019.pdf', url: '/assets/ARIIA_19_Cert.pdf' }
     ]
   }
 ];
@@ -256,14 +256,6 @@ export const ARIIAPortal: React.FC = () => {
             >
               <Download className="w-5 h-5 mr-2" />
               Download All Documents
-            </a>
-            <a
-              href="/assets/ARIIA_Latest_Report.pdf"
-              download
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent-gold to-accent-gold/80 text-dark-900 font-semibold rounded-lg hover:from-accent-gold/90 hover:to-accent-gold/70 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
-              <FileText className="w-5 h-5 mr-2" />
-              Latest ARIIA Report
             </a>
           </div>
         </div>
