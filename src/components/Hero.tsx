@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, TrendingUp, Award } from 'lucide-react';
+import { Download, Award } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -46,29 +46,6 @@ export const Hero: React.FC = () => {
               <Download className="w-6 h-6 mr-3" />
               Latest ARIIA Report 2023
             </a>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            <div className="text-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-accent-gold mb-2 flex items-center justify-center">
-                <TrendingUp className="w-8 h-8 mr-2" />
-                Band A
-              </div>
-              <div className="text-gray-300 font-medium">ARIIA Ranking</div>
-            </div>
-            <div className="text-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-accent-teal mb-2">150+</div>
-              <div className="text-gray-300 font-medium">Innovation Projects</div>
-            </div>
-            <div className="text-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-accent-gold mb-2">50+</div>
-              <div className="text-gray-300 font-medium">Startups Incubated</div>
-            </div>
-            <div className="text-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
-              <div className="text-3xl md:text-4xl font-bold text-accent-teal mb-2">₹2Cr+</div>
-              <div className="text-gray-300 font-medium">Innovation Funding</div>
-            </div>
           </div>
         </div>
       </div>
