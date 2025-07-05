@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Lightbulb } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -31,21 +31,14 @@ export const Hero: React.FC = () => {
             Atal Ranking of Institutions on Innovation Achievements - Showcasing SPIT's commitment to fostering innovation, entrepreneurship, and startup ecosystem
           </p>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+          {/* CTA Button */}
+          <div className="flex justify-center mb-12">
             <a
               href="/assets/ARIIA_Report_2024.pdf"
               className="inline-flex items-center px-8 py-4 bg-accent-gold hover:bg-accent-gold/90 text-dark-900 font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <Download className="w-6 h-6 mr-3" />
               Latest ARIIA Report 2024
-            </a>
-            <a
-              href="#ariia-portal"
-              className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-dark-900 font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105"
-            >
-              <Lightbulb className="w-6 h-6 mr-3" />
-              Explore Innovation Data
             </a>
           </div>
         </div>
