@@ -17,61 +17,46 @@ const yearlyData: YearData[] = [
   {
     year: '2023',
     reports: [
-      { name: 'ARIIA Report 2023.pdf', url: '/assets/ARIIA_Report_2023.pdf' },
-      { name: 'Innovation Metrics 2023.pdf', url: '/assets/Innovation_Metrics_2023.pdf' },
-      { name: 'Performance Analysis 2023.pdf', url: '/assets/Performance_Analysis_2023.pdf' }
+      { name: 'ARIIA Report 2023.pdf', url: '/assets/ARIIA_Report_2023.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2023.pdf', url: '/assets/ARIIA_Certificate_2023.pdf' },
-      { name: 'Innovation Excellence Award 2023.pdf', url: '/assets/Innovation_Award_2023.pdf' }
+      { name: 'ARIIA Certificate 2023.pdf', url: '/assets/ARIIA_Certificate_2023.pdf' }
     ]
   },
   {
     year: '2022',
     reports: [
-      { name: 'ARIIA Report 2022.pdf', url: '/assets/ARIIA_Report_2022.pdf' },
-      { name: 'Startup Ecosystem Report 2022.pdf', url: '/assets/Startup_Report_2022.pdf' },
-      { name: 'Research Impact Report 2022.pdf', url: '/assets/Research_Impact_2022.pdf' }
+      { name: 'ARIIA Report 2022.pdf', url: '/assets/ARIIA_Report_2022.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2022.pdf', url: '/assets/ARIIA_Certificate_2022.pdf' },
-      { name: 'Best Innovation Practices 2022.pdf', url: '/assets/Best_Practices_2022.pdf' }
+      { name: 'ARIIA Certificate 2022.pdf', url: '/assets/ARIIA_Certificate_2022.pdf' }
     ]
   },
   {
     year: '2021',
     reports: [
-      { name: 'ARIIA Report 2021.pdf', url: '/assets/ARIIA_Report_2021.pdf' },
-      { name: 'Innovation Infrastructure Report 2021.pdf', url: '/assets/Infrastructure_Report_2021.pdf' },
-      { name: 'Industry Collaboration Report 2021.pdf', url: '/assets/Industry_Report_2021.pdf' }
+      { name: 'ARIIA Report 2021.pdf', url: '/assets/ARIIA_Report_2021.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2021.pdf', url: '/assets/ARIIA_Certificate_2021.pdf' },
-      { name: 'Entrepreneurship Excellence 2021.pdf', url: '/assets/Entrepreneurship_2021.pdf' }
+      { name: 'ARIIA Certificate 2021.pdf', url: '/assets/ARIIA_Certificate_2021.pdf' }
     ]
   },
   {
     year: '2020',
     reports: [
-      { name: 'ARIIA Report 2020.pdf', url: '/assets/ARIIA_Report_2020.pdf' },
-      { name: 'Digital Innovation Report 2020.pdf', url: '/assets/Digital_Innovation_2020.pdf' },
-      { name: 'Patent Portfolio Report 2020.pdf', url: '/assets/Patent_Report_2020.pdf' }
+      { name: 'ARIIA Report 2020.pdf', url: '/assets/ARIIA_Report_2020.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2020.pdf', url: '/assets/ARIIA_Certificate_2020.pdf' },
-      { name: 'Innovation Leadership 2020.pdf', url: '/assets/Innovation_Leadership_2020.pdf' }
+      { name: 'ARIIA Certificate 2020.pdf', url: '/assets/ARIIA_Certificate_2020.pdf' }
     ]
   },
   {
     year: '2019',
     reports: [
-      { name: 'ARIIA Report 2019.pdf', url: '/assets/ARIIA_Report_2019.pdf' },
-      { name: 'Incubation Center Report 2019.pdf', url: '/assets/Incubation_Report_2019.pdf' },
-      { name: 'Student Innovation Report 2019.pdf', url: '/assets/Student_Innovation_2019.pdf' }
+      { name: 'ARIIA Report 2019.pdf', url: '/assets/ARIIA_Report_2019.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2019.pdf', url: '/assets/ARIIA_Certificate_2019.pdf' },
-      { name: 'Innovation Foundation Award 2019.pdf', url: '/assets/Foundation_Award_2019.pdf' }
+      { name: 'ARIIA Certificate 2019.pdf', url: '/assets/ARIIA_Certificate_2019.pdf' }
     ]
   }
 ];
@@ -280,33 +265,6 @@ export const ARIIAPortal: React.FC = () => {
               <FileText className="w-5 h-5 mr-2" />
               Latest ARIIA Report
             </a>
-          </div>
-        </div>
-
-        {/* Summary Stats */}
-        <div className={`mt-16 transition-all duration-700 delay-800 ${
-          isVisible ? 'animate-fade-in' : 'opacity-0'
-        }`}>
-          <div className="bg-gradient-to-r from-primary-600 to-accent-teal rounded-2xl p-8 text-white">
-            <h3 className="font-playfair text-2xl font-bold text-center mb-8">ARIIA Documentation Summary</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2">5</div>
-                <div className="text-primary-100">Years Covered</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2">15</div>
-                <div className="text-primary-100">Total Reports</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2">10</div>
-                <div className="text-primary-100">Certificates</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-2">Band A</div>
-                <div className="text-primary-100">Current Ranking</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
