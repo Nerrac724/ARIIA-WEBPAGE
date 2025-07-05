@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download } from 'lucide-react';
+import { TrendingUp } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -27,19 +27,31 @@ export const Hero: React.FC = () => {
           <h2 className="font-playfair text-2xl md:text-4xl lg:text-5xl font-bold text-accent-gold mb-6">
             ARIIA Rankings Portal
           </h2>
-          <p className="font-poppins text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto">
+          <p className="font-poppins text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto">
             Atal Ranking of Institutions on Innovation Achievements - Showcasing SPIT's commitment to fostering innovation, entrepreneurship, and startup ecosystem
           </p>
-          
-          {/* CTA Button */}
-          <div className="flex justify-center mb-12">
-            <a
-              href="/assets/ARIIA_Report_2024.pdf"
-              className="inline-flex items-center px-8 py-4 bg-accent-gold hover:bg-accent-gold/90 text-dark-900 font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
-              <Download className="w-6 h-6 mr-3" />
-              Latest ARIIA Report 2024
-            </a>
+
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            <div className="text-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div className="text-3xl md:text-4xl font-bold text-accent-gold mb-2 flex items-center justify-center">
+                <TrendingUp className="w-8 h-8 mr-2" />
+                Band A
+              </div>
+              <div className="text-gray-300 font-medium">ARIIA Ranking</div>
+            </div>
+            <div className="text-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
+              <div className="text-3xl md:text-4xl font-bold text-accent-teal mb-2">150+</div>
+              <div className="text-gray-300 font-medium">Innovation Projects</div>
+            </div>
+            <div className="text-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
+              <div className="text-3xl md:text-4xl font-bold text-accent-gold mb-2">50+</div>
+              <div className="text-gray-300 font-medium">Startups Incubated</div>
+            </div>
+            <div className="text-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
+              <div className="text-3xl md:text-4xl font-bold text-accent-teal mb-2">₹2Cr+</div>
+              <div className="text-gray-300 font-medium">Innovation Funding</div>
+            </div>
           </div>
         </div>
       </div>
