@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
           {/* CTA Button */}
           <div className="flex justify-center mb-12">
             <a
-              href="/assets/ARIIA_23_Report.pdf"
+              href=""
               className="inline-flex items-center px-8 py-4 bg-accent-gold hover:bg-accent-gold/90 text-dark-900 font-semibold text-lg rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <Download className="w-6 h-6 mr-3" />

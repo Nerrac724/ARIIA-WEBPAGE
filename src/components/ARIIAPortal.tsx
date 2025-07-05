@@ -17,7 +17,7 @@ const yearlyData: YearData[] = [
   {
     year: '2023',
     reports: [
-      { name: 'ARIIA Report 2023.pdf', url: '/assets/ARIIA_23_Report.pdf' }
+      { name: 'ARIIA Report 2023.pdf', url: '' }
     ],
     certificates: [
       { name: 'ARIIA Certificate 2023.pdf', url: '/assets/ARIIA_23_Cert.pdf' }
@@ -29,7 +29,7 @@ const yearlyData: YearData[] = [
       { name: 'ARIIA Report 2022.pdf', url: '/assets/ARIIA_22_Report.pdf' }
     ],
     certificates: [
-      { name: 'ARIIA Certificate 2022.pdf', url: '/assets/ARIIA_22_Cert.pdf' }
+      { name: 'ARIIA Certificate 2022.pdf', url: '' }
     ]
   },
   {
@@ -250,7 +250,7 @@ export const ARIIAPortal: React.FC = () => {
         }`}>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="/assets/ARIIA_Complete_Archive.zip"
+              href="/assets/ARIIA_Complete.rar"
               download
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-accent-teal text-white font-semibold rounded-lg hover:from-primary-700 hover:to-accent-teal/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
